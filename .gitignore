@@ -1,18 +1,12 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Node build artifacts
+node_modules
+npm-debug.log
 
-# Other files and folders
-.settings/
+# Local development
+*.env
+*.dev
+.DS_Store
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Docker
+Dockerfile
+docker-compose.yml
