@@ -1,0 +1,18 @@
+
+/* PORTFOLIO FILTERS */
+.filters {
+  list-style: none; padding: 0; margin: 0 0 2em; text-align: center;
+}
+.filters li {
+  display: inline-block; margin: .6em .6em; text-transform: uppercase;
+}
+.filters li a {
+  opacity: .4; letter-spacing: .2em;
+}
+.filters li a:hover {
+  opacity: .5;
+}
+.filters .current a,
+.filters .current a:hover {
+  opacity: 1;
+}

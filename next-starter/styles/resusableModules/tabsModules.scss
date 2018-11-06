@@ -1,0 +1,23 @@
+
+/* TABS */
+.tabs {
+  font-size: 1em; margin-bottom: 2em;
+}
+.tabs .tab-titles {
+  padding: 0; margin: 0 0 -1px 0;
+}
+.tabs .tab-titles li {
+  display: inline-block
+}
+.tabs .tab-titles li a {
+  display: inline-block; padding: 1em 2em; font-weight: bold; font-size: 13px; letter-spacing: 0; border: 0; cursor: pointer;
+}
+.tabs .tab-titles li a.active {
+  border-bottom: 6px solid #555;
+}
+.tabs .tab-content {
+  margin-top: -1px; font-size: 14px; border: 1px solid #EAEEEF;
+}
+.tabs .tab-content > div {
+  padding: 1.8em; display: none;
+}

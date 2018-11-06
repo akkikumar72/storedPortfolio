@@ -1,0 +1,13 @@
+/* SINGLE PAGE MENU WITH ICONS */
+.menu-with-icons a:before {
+  display: inline-block; margin-right: 5px; vertical-align: middle; font-size: 18px;
+}
+.menu-with-icons .home:before {
+  content: '\e872';
+}
+.menu-with-icons .return:before {
+  content: '\e813';
+}
+.menu-with-icons .search-toggle:before {
+  content: '\e819';
+}
