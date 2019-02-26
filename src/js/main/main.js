@@ -55,7 +55,7 @@
             .addClass('is-image-loaded');
         };
       }
-      debugger
+      debugger;
 
       // MOBILE HEIGHT FIX
       if (isMobile()) {
