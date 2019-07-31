@@ -18,8 +18,6 @@ function setActivePage() {
         //porftolioSingleJustClosed = false;
         var new_url = $('a[data-slug=' + path + ']').data('file-url');
         var new_link = path + '.html';
-        console.log("new url",new_url);
-        console.log("path", path);
         showPage(new_link);
       }
     }
