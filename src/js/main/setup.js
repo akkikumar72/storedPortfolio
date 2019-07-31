@@ -1,6 +1,5 @@
-
 /* global variables */
-var portfolioKeyword = "";
+var portfolioKeyword = '';
 var porftolioSingleActive = false;
 var porftolioSingleJustClosed = false;
 var soundEffects = false;
@@ -8,33 +7,28 @@ var wind, windReverse, tick;
 
 // SETUP : plugins
 function setup() {
+  // MASONRY
+  setupMasonry();
 
-    // MASONRY
-    setupMasonry();
+  // LIGHTBOX
+  setupLightbox();
 
-    // LIGHTBOX
-    setupLightbox();
+  // FILL SKILL BARS
+  fillBars();
 
-    // FILL SKILL BARS
-    fillBars()
+  // PORTFOLIO SINGLE AJAX
+  setupAjax();
 
-    // PORTFOLIO SINGLE AJAX
-    setupAjax();
+  // FORMS
+  setupForms();
 
-    // FORMS
-    setupForms();
+  // TABS
+  tabs();
 
-    // MAP
-    setupMap();
+  // TOGGLES
+  toggles();
 
-    // TABS
-    tabs();
-
-    // TOGGLES
-    toggles();
-
-    // FLUID MEDIA
-    fluidMedia();
-
+  // FLUID MEDIA
+  fluidMedia();
 }
 // ------------------------------
