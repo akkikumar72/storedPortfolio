@@ -1,2 +1,2 @@
-/*! project-name v0.0.1 | (c) 2019 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 function fillBars(){$(".bar").length&&$(".bar").each((function(){var a=$(this),t=a.attr("data-percent");a.find(".progress").css("width",t+"%").html("<span>"+t+"</span>")}))}

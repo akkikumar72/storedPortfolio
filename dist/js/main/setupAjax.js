@@ -1,2 +1,2 @@
-/*! project-name v0.0.1 | (c) 2019 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
 function setupAjax(){$(".one-page-layout .media-box .ajax, .one-page-layout .portfolio-nav .ajax a").on("click",(function(a){a.preventDefault();var e=$(this).attr("href"),t=$.address.baseURL(),o=giveDetailUrl();if(-1!==e.indexOf(t)){var i=e.length;o=e.slice(t.length+1,i),$.address.path("/"+o)}else o=e,$.address.path(portfolioKeyword+"/"+o)}))}
