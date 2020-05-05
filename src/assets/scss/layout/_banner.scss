@@ -1,0 +1,154 @@
+/* Banner */
+
+	#banner {
+		background-image: linear-gradient(70deg,#5b3ff8 0%,#b282ea 70%);
+		@include vendor('align-items', 'center');
+		@include vendor('display', 'flex');
+		@include padding(4em, 0, (2em, 0, 0, 0));
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
+		position: relative;
+		top: -3.25em;
+
+		h1 {
+			font-size: 3.25em;
+		}
+
+		> .inner {
+			@include vendor('transition', (
+				'opacity 1.5s ease',
+				'transform 0.5s ease-out',
+				'filter 0.5s ease',
+				'-webkit-filter 0.5s ease'
+			));
+			padding: 0 !important;
+			position: relative;
+			z-index: 2;
+
+			.image {
+				display: none;
+			}
+
+			header {
+				width: auto;
+
+				> :first-child {
+					width: auto;
+
+					&:after {
+						max-width: 100%;
+					}
+				}
+			}
+
+			.content {
+				@include vendor('display', 'flex');
+				@include vendor('flex-direction', 'column');
+				@include vendor('align-items', 'flex-start');
+				margin: 0 0 _size(element-margin) 0;
+
+				ul{
+
+				}
+
+				> :first-child {
+					margin-left: 0;
+				}
+
+				p {
+					font-size: 0.7em;
+					font-weight: _font(weight-bold);
+					letter-spacing: _font(letter-spacing-alt);
+					text-transform: uppercase;
+				}
+
+			}
+
+		}
+
+		&.major {
+			height: 75vh;
+			min-height: 30em;
+			max-height: 50em;
+
+			&.alt {
+				opacity: 0.75;
+			}
+		}
+
+		.body.is-loading & {
+			&:after {
+				opacity: 1.0;
+			}
+
+			> .inner {
+				@include vendor('filter', 'blur(0.125em)');
+				@include vendor('transform', 'translateX(-0.5em)');
+				opacity: 0;
+			}
+		}
+		.inner-illust{
+			display: inline-block;
+			max-width: 25rem;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include breakpoint(large) {
+			background-attachment: scroll;
+		}
+
+		@include breakpoint(small) {
+			@include padding(3em, 0, (2em, 0, 0, 0));
+			height: auto;
+			margin-bottom: -2.75em;
+			max-height: none;
+			min-height: 0;
+			top: -2.75em;
+
+			h1 {
+				font-size: 2em;
+			}
+
+			 .inner {
+				.content {
+					display: block;
+
+					> * {
+						margin-left: 0;
+						margin-bottom: _size(element-margin);
+					}
+				}
+			}
+
+			&.major {
+				height: auto;
+				min-height: 0;
+				max-height: none;
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			@include padding(4em, 0, (2em, 0, 0, 0));
+
+			  > .inner {
+				.content {
+					p {
+						br {
+							display: none;
+						}
+					}
+				}
+			}
+
+			&.major {
+				@include padding(6em, 0, (2em, 0, 0, 0));
+			}
+		}
+	}
