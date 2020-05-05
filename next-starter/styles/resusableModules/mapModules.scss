@@ -1,0 +1,21 @@
+/* MAP */
+.map {
+  position: relative; margin: 0 auto; max-width: 80%; box-shadow: -1px -1px 10px rgba(17, 26, 34, 0.1), 18px 6px 10px rgba(17, 26, 34, 0.08);
+}
+.map,
+.map .gm-style {
+  border-radius: 50%; overflow: hidden;
+}
+.map iframe {
+  width: 100%; border-width: 0; outline: none;
+}
+.map-canvas {
+  margin: 0px; padding: 0px; padding-top: 100%; line-height: 1.6;
+}
+.map-canvas img {
+  max-width: none;
+}
+.map .gmnoprint,
+.map .gm-style-cc {
+  display: none;
+}

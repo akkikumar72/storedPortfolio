@@ -1,0 +1,40 @@
+/* BUTTONS */
+input[type=submit],
+input[type=button],
+button,
+.button {
+  color: #345; border: 2px solid #345; font-family: inherit; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; line-height: 1; text-decoration: none; background: none; cursor: pointer; padding: 18px 32px; margin: 10px 20px 0 0; display: inline-block; outline: none; position: relative; transition: all 0.3s; overflow: hidden;
+}
+input[type=submit]:hover,
+input[type=button]:hover,
+button:not(.button):hover {
+  background: #345; color: #fff;
+}
+.button:last-child {
+  margin-right: 0px;
+}
+.button.small {
+  font-size: 11px; padding: 9px 18px;
+}
+.button:after {
+  width: 0%; height: 100%; top: 0; left: 0; background: #345; content: ''; position: absolute; z-index: -1; transition: all 0.3s;
+}
+.button:hover,
+.button:active {
+  color: #fff !important;
+}
+.button:active {
+  transition: all 0.1s; transform: scale(0.9); outline: 0;
+}
+.button:hover:after,
+.button:active:after {
+  width: 100%;
+}
+/* icons in buttons */
+.button i {
+  display: inline-block; margin-right: 5px;
+}
+.button i:before {
+  font-size: 120%;
+}
+

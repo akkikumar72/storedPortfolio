@@ -1,0 +1,86 @@
+
+/* ----- 1.3 TYPOGRAPHY ----- */
+/* headings and paragraphs  */
+h1 {
+  font-size: 1.80em; margin: 0.8em 0 0.4em 0; line-height: 1.2;
+}
+h2 {
+  font-size: 1.20em; margin: 1.0em 0 0.6em 0; line-height: 1.3;
+}
+h3 {
+  font-size: 1.00em; margin: 1.0em 0 .6em 0; font-weight: 700;
+}
+h4 {
+  font-size: 0.9em; margin: 2.0em 0 .6em 0;
+}
+h5 {
+  font-size: 0.9em; margin: 1.0em 0 .6em 0;
+}
+h6 {
+  font-size: 0.9em; margin: 1.0em 0 .6em 0;
+}
+p {
+  margin: 1em 0 1.4em 0;
+}
+h1,
+.entry-title {
+  font-weight: 600; word-wrap: break-word;
+}
+/* blockquote  */
+blockquote {
+  position: relative; margin: 1.6em 0; padding: 0 1.4em; font-size: 1.4em; line-height: 1.5; font-weight: bold;
+}
+blockquote p {
+  line-height: 100%;
+}
+blockquote cite {
+  display: block; font-size: 13px; padding-right: 1em; margin-top: 1em; font-style: normal; font-weight: 400; opacity: .5; letter-spacing: 0.07em;
+}
+hr {
+  padding: .6em 0 1em 0; margin-bottom: 3em; outline: 0; border-width: 0 0 2px 0; border-style: solid; border-color: #eee;
+}
+/* tables  */
+table {
+  font-size: .875em; margin-bottom: 3em; text-align: center;
+}
+tr th {
+  padding: .8em 1em; font-size: 12px; font-weight: bold; border-bottom: 2px solid #DDE4E6; text-transform: uppercase;
+}
+tr td {
+  color: #6A7686; padding: .8em 1em .6em 1em; border-bottom: 1px solid #eee;
+}
+tfoot tr td {
+  border-bottom: 0
+}
+tr:nth-child(odd) td {
+  background: #FAFCFD;
+}
+/* code and pre  */
+code,
+pre {
+  max-width: 100%; overflow: scroll; padding: 0 3px 2px; margin-bottom: 4em; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-size: 12px; color: #333333; white-space: pre; overflow: auto;
+}
+code {
+  display: inline-block; margin: 0 .4em; padding: 1px 6px; background: #fff; border: 1px solid #DDE4E6; box-shadow: 1px 1px 0 #fff, 2px 2px 0 #DDE4E6;
+}
+pre {
+  border: 1px solid #eee; padding: 12px 20px;
+}
+/* lists  */
+ol,
+ul {
+  margin: .2em 0 1em 0;
+}
+ul {
+  list-style: disc;
+}
+dt {
+  margin-bottom: .4em; font-size: 12px; font-weight: bold;
+}
+dd {
+  padding-bottom: 1em; margin-left: 1.4em;
+}
+/* Bootstrap Grid Fix */
+@media (max-width:767px){
+  .col-xs-6:nth-child(2n+1) { clear: left; }
+}

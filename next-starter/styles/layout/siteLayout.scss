@@ -1,0 +1,50 @@
+
+/*  --------------------------------------------
+
+	4. LAYOUT (@layout) : layout styles
+
+    -------------------------------------------- */
+.site,
+.site-main {
+  height: 100%;
+}
+.page-layout {
+  position: relative; width: 100%; min-height: 100%; background-size: cover; background-position: center center;
+}
+.p-overlay * {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.layout-fixed,
+.layout-medium,
+.layout-full {
+  width: 90%; margin: 0 auto; z-index: 1; position: relative;
+}
+.layout-fixed {
+  max-width: 700px;
+}
+.layout-medium {
+  max-width: 1040px;
+}
+.layout-full {
+  max-width: 1700px;
+}
+.hentry {
+  padding: 0 0 2em 0;
+}
+.entry-header {
+  padding-top: 2em;
+}
+.entry-title {
+  margin: 0; text-align: center;
+}
+.entry-content {
+  margin: 1.2em 0 0;
+}
