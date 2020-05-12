@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-forty-v2",
-  "description": "Gatsby Starter - Forty V2",
+  "name": "gladino",
+  "description": "Gladino.net - The portfolio of Akash Pathak",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Akash Kumar Pathak",
   "dependencies": {
-    "gatsby": "^2.19.5",
+    "gatsby": "^2.21.24",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -29,6 +29,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/akkikumar72/storedPortfolio"
   }
 }
