@@ -1,49 +1,26 @@
-import React from 'react'
-import '../assets/scss/main.scss'
-import Contact from './Contact'
-import Footer from './Footer'
+import React, { useEffect, useState } from 'react';
+import '../assets/scss/main.scss';
+import Contact from './Contact';
+import Footer from './Footer';
 
-class Layout extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isMenuVisible: false,
-            loading: 'is-loading'
-        }
-        this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    }
+const Layout = ({ showContactFom = true, children }) => {
+  const [loading, setLoading] = useState('is-loading');
+  useEffect(() => {
+    let timer1 = setTimeout(() => setLoading(''), 1000);
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
 
-    componentDidMount () {
-        this.timeoutId = setTimeout(() => {
-            this.setState({loading: ''});
-        }, 100);
-    }
+  return (
+    <div className={`body ${loading}`}>
+      <div id="wrapper">
+        {children}
+        {showContactFom && <Contact />}
+        <Footer />
+      </div>
+    </div>
+  );
+};
 
-    componentWillUnmount () {
-        if (this.timeoutId) {
-            clearTimeout(this.timeoutId);
-        }
-    }
-
-    handleToggleMenu() {
-        this.setState({
-            isMenuVisible: !this.state.isMenuVisible
-        })
-    }
-
-    render() {
-        const { children } = this.props
-
-        return (
-            <div className={`body ${this.state.loading} ${this.state.isMenuVisible ? 'is-menu-visible' : ''}`}>
-                <div id="wrapper">
-                    {children}
-                    <Contact />
-                    <Footer />
-                </div>
-            </div>
-        )
-    }
-}
-
-export default Layout
+export default Layout;

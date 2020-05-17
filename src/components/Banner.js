@@ -1,7 +1,8 @@
 import React from 'react'
 import hackerSvg from '../assets/images/illustration/cv.svg'
+import GatsbyLink from 'gatsby-link';
 
-const Banner = props => (
+const Banner = () => (
   <section id="banner" className="major">
     <div className="inner">
       <div className="grid-wrapper">
@@ -18,14 +19,14 @@ const Banner = props => (
             </h5>
             <ul className="actions">
               <li>
-                <a href="https://docs.google.com/document/d/1JEfkwUWnMBsGEfQTilUHO4vwtijbQrOilLtBiEN-6_Q/edit?usp=sharing" className="button special icon fa-download" target='_blank'>
+                <a href="https://docs.google.com/document/d/1JEfkwUWnMBsGEfQTilUHO4vwtijbQrOilLtBiEN-6_Q/edit?usp=sharing" className="button special icon fa-download" target='_blank' rel="noopener noreferrer">
                   Resume
                 </a>
               </li>
               <li>
                 <a href="#profile" className="button special scrolly">
                   Discover
-                </a>
+                </GatsbyLink>
               </li>
             </ul>
           </div>

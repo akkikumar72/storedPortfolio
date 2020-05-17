@@ -73,7 +73,7 @@ const Contact = () => {
             <div className="contact-method">
               <span className="icon alt fa-envelope"></span>
               <h3>Email</h3>
-              <a href="#">akkikumar72@gmail.com</a>
+              <span>akkikumar72@gmail.com</span>
             </div>
           </section>
           <section>

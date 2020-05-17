@@ -1,22 +1,19 @@
 import React from 'react';
 import Layout from '../components/layout'
-import Helmet from 'react-helmet';
-import Banner from '../components/Banner';
-import Profile from '../components/profile';
+import {Link} from 'gatsby'
 
 export default () => (
-  <>
-    <Helmet
-      title="Gladino.net - The portfolio of Akash Pathak"
-      meta={[
-        { name: 'Gladino', content: 'Portfolio' },
-        { name: 'keywords', content: 'akash, react, UI/UX, open source,portfolio ' },
-      ]}
-    >
-    </Helmet>
-    <div id="main">
-    <h1>Thank you!</h1>
-    <p>You form is submitted successfully!!!</p>
-    </div>
-  </>
+  <Layout showContactFom={false}>
+         <div className="thanksPage">
+           <div className="inner">
+             <div className="contact-method">
+               <Link to="/"><span className="icon alt fa-arrow-left"></span></Link> <h4>Back to home</h4>
+             </div>
+             <header className="major"><h1>Thanks for contacting me <span role="img" aria-label='thanks'>🙏</span></h1></header>
+             <div className="content">
+              <p>I will contact you soon!!!</p>
+               </div>
+           </div>
+         </div>
+  </Layout>
 );
