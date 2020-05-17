@@ -14,6 +14,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
+    console.log({...state});
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -29,7 +30,7 @@ const Contact = () => {
     <section id="contact">
       <div className="inner">
         <section>
-          <form  name="contact"
+          <form  name="contactform-gladino"
                  method="post"
                  action="/thanks/"
                  data-netlify="true"
@@ -44,17 +45,17 @@ const Contact = () => {
             </p>
             <p>
               <label>
-                Your Name: <input type="text" name="name" required />
+                Your Name: <input type="text" name="name" onChange={handleChange} required />
               </label>
             </p>
             <p>
               <label>
-                Your Email: <input type="email" name="email" required />
+                Your Email: <input type="email" name="email" onChange={handleChange} required />
               </label>
             </p>
             <p>
               <label>
-                Message: <textarea name="message" rows="6" />
+                Message: <textarea name="message" onChange={handleChange} rows="6" />
               </label>
             </p>
             <ul className="actions">
