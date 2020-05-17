@@ -1,6 +1,5 @@
 import React from 'react'
 import hackerSvg from '../assets/images/illustration/cv.svg'
-import GatsbyLink from 'gatsby-link';
 
 const Banner = () => (
   <section id="banner" className="major">
@@ -26,7 +25,7 @@ const Banner = () => (
               <li>
                 <a href="#profile" className="button special scrolly">
                   Discover
-                </GatsbyLink>
+                </a>
               </li>
             </ul>
           </div>
