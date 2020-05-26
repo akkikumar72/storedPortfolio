@@ -22,7 +22,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-analytics",
       // Blank options, equivalent to string-only plugin
       options: {
-        trackingId: "UA-81911303-1",
+        trackingId: "GOOGLE_ANALYTICS_TRACKING_ID",
       },
     },
     'gatsby-plugin-sass',
