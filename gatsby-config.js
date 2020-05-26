@@ -18,6 +18,13 @@ module.exports = {
         icon: 'src/assets/images/gladino.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      // Blank options, equivalent to string-only plugin
+      options: {
+        trackingId: "GOOGLE_ANALYTICS_TRACKING_ID",
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
