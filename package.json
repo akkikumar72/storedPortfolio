@@ -13,7 +13,8 @@
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "snyk": "^1.336.0"
   },
   "keywords": [
     "gatsby"
@@ -23,7 +24,9 @@
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "start": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "devDependencies": {
     "gatsby-link": "^2.4.2",
@@ -32,5 +35,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/akkikumar72/storedPortfolio"
-  }
+  },
+  "snyk": true
 }
