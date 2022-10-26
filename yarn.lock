@@ -1995,6 +1995,11 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
+"@snyk/protect@^1.1041.0":
+  version "1.1041.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1041.0.tgz#dc88c5712d037c495dc2b6b558baf37ba1bb3220"
+  integrity sha512-i6V3S1jO9B00Wb2EOoVhvi0XvRXF3BGaceeglTeRfGVtiKSklhUZjweKFtoI8Y5iSNL6lWHXfUscS8Qn7kdg1A==
+
 "@swc/helpers@^0.4.2":
   version "0.4.12"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.12.tgz#203243e78cff3c87c081c97ae548ab33e2503573"
@@ -9998,11 +10003,6 @@ snake-case@^3.0.4:
   dependencies:
     dot-case "^3.0.4"
     tslib "^2.0.3"
-
-snyk@^1.996.0:
-  version "1.996.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.996.0.tgz#0369ca9e6a3a148751294c1320f59a79d5eb3c88"
-  integrity sha512-nq//Ely0bSt50LzX9Er5lCQNqTpaKn7I7xkhUB3Z+8rs8Jqha360HeQwhbVzsuQS3xT/1+36zt6CcgyLPM1QbA==
 
 socket.io-adapter@~2.1.0:
   version "2.1.0"
